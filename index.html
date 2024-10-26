@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind Css</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" href="./assets/tailwindcss-mark.3c5441fc7a190fb1800d4a5c7f07ba4b1345a9c8.svg">
+    <link rel="stylesheet" href="./dist/style.css">
+    <!-- for font awsome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <nav class=" container mx-auto p-6 ">
+        <div class="flex justify-between items-center ">
+            <div class="logo">
+                <img src="./assets/tailwindcss-logotype/tailwindcss-logotype.svg" alt="tailwind logo" width="200px">
+            </div>
+            <div class="hidden md:flex space-x-6 ">
+                <a href="#"
+                    class="py-2 capitalize text-slate-700 hover:text-slate-400 transition-all tracking-wider">portfolio</a>
+                <a href="#"
+                    class="py-2 capitalize text-slate-700 hover:text-slate-400 transition-all tracking-wider">about</a>
+                <a href="#"
+                    class="py-2 capitalize text-slate-700 hover:text-slate-400 transition-all tracking-wider">contact</a>
+                <a href="#"
+                    class="py-2 capitalize text-slate-700 hover:text-slate-400 transition-all tracking-wider">social</a>
+                <a href="#"
+                    class=" capitalize py-2 px-6 rounded-full bg-orange-500 hover:bg-slate-700 transition-all text-white  tracking-wider">call
+                    me</a>
+            </div>
+            <div class="menu-icon md:hidden text-3xl cursor-pointer">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+        <div class="md:hidden">
+            <div
+                class="menu flex hidden w-4/5 fixed justify-between items-center flex-col space-y-4 border border-slate-300 bg-slate-100 p-3 mt-3 font-bold shadow-lg shadow-slate-800 ">
+                <a href="#"
+                    class="py-2 capitalize text-slate-700 hover:text-slate-400 transition-all tracking-wider">portfolio</a>
+                <a href="#"
+                    class="py-2 capitalize text-slate-700 hover:text-slate-400 transition-all tracking-wider">about</a>
+                <a href="#"
+                    class="py-2 capitalize text-slate-700 hover:text-slate-400 transition-all tracking-wider">contact</a>
+                <a href="#"
+                    class="py-2 capitalize text-slate-700 hover:text-slate-400 transition-all tracking-wider">social</a>
+                <a href="#"
+                    class=" capitalize py-2 px-6 rounded-full bg-orange-500 hover:bg-slate-700 transition-all text-white  tracking-wider">call
+                    me</a>
+            </div>
+        </div>
+    </nav>
+    <section class="flex flex-col-reverse justify-between items-center space-x-2 container mx-auto md:flex-row">
+        <div
+            class="w-full text-center flex flex-col justify-between space-y-3 items-center p-6 md:items-start md:w-1/2  md:text-left ">
+            <h1 class=" font-bold text-3xl text-slate-800 md:text-5xl">
+                Rapidly build modern websites without ever leaving your HTML.
+            </h1>
+            <p>
+                A utility-first CSS framework packed with classes like flex, pt-4, text-center and rotate-90 that can be
+                composed to
+                build any design, directly in your markup.
+            </p>
+            <a href="#"
+                class=" capitalize py-2 px-6 rounded-full bg-orange-500 hover:bg-slate-700 transition-all text-white  tracking-wider">get
+                started</a>
+        </div>
+        <div class=" md:w-1/2 w-full p-6">
+            <img src="assets/undraw_speed_test_re_pe1f.svg" alt="speed-test" class=" max-w-full">
+        </div>
+    </section>
+    <section
+        class="flex flex-col justify-between items-center text-center p-6 space-x-2 container mx-auto my-12 md:my-28 ">
+        <h2 class=" capitalize text-3xl font-bold mb-6 md:text-4xl text-slate-800">“Best practices” don’t actually work.
+        </h2>
+        <p>
+            I’ve written a few thousand words on why traditional “semantic class names” are the reason CSS is hard to
+            maintain, but
+            the truth is you’re never going to believe me until you actually try it. If you can suppress the urge to
+            retch long
+            enough to give it a chance, I really think you’ll wonder how you ever worked with CSS any other way.
+        </p>
+        <div class="content flex flex-col space-y-5 space-x-0 mt-10 md:flex-row md:space-x-5 md:space-y-0 ">
+            <div
+                class="bg-slate-300 border border-slate-200 rounded-lg space-y-2 flex flex-col items-center p-6 transition-all hover:bg-slate-100 md:w-1/3">
+                <img src="assets/adam.jpg" alt="adam" class=" w-16 -mt-12 rounded-full">
+                <h3 class=" text-lg font-bold">Adam Sandler</h3>
+                <p class=" text-sm leading-5">
+                    The way I wrote it changed frequently. It’s not a coincidence Tailwind was released the same year.
+                    It
+                    might look wrong,
+                    but spend time with it and you’ll realize semantic CSS was a 20 year mistake.
+                </p>
+            </div>
+            <div
+                class="bg-slate-300 border border-slate-200 rounded-lg space-y-2 flex flex-col items-center p-6 transition-all hover:bg-slate-100 md:w-1/3">
+                <img src="assets/marcel.jpg" alt="marcel" class=" w-16 -mt-12 rounded-full">
+                <h3 class=" text-lg font-bold">Madeline Bauer</h3>
+                <p class=" text-sm leading-5">
+                    I have no design skills and with Tailwind I can actually make good looking websites with ease and
+                    it's everything I ever
+                    wanted in a CSS framework.
+                </p>
+            </div>
+            <div
+                class="bg-slate-300 border border-slate-200 rounded-lg space-y-2 flex flex-col items-center p-6 transition-all hover:bg-slate-100 md:w-1/3">
+                <img src="assets/marcel.jpg" alt="marcel" class=" w-16 -mt-12 rounded-full">
+                <h3 class=" text-lg font-bold ">Marcel Khalifa</h3>
+                <p class=" text-sm leading-5">
+                    I started using @tailwindcss. I instantly fell in love with their responsive modifiers, thorough
+                    documentation, and how
+                    easy it was customizing color palettes.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <footer class=" bg-slate-800">
+        <div
+            class="container mx-auto px-5 py-10 text-white flex flex-col-reverse space-y-10 justify-center items-center md:justify-between md:flex-row md:space-y-0">
+            <div class=" w-full flex flex-col justify-between items-center mt-10 md:w-1/3 md:mt-0">
+                <img src="./assets/tailwindcss-logotype/tailwindcss-logotype.svg" alt="tailwind logo" width="200px">
+                <div class="icons flex w-full mx-auto mt-4 justify-evenly items-center md:w-1/2">
+                    <i class="fa-brands fa-facebook text-2xl hover:text-slate-400 cursor-pointer transition-all"></i>
+                    <i class="fa-brands fa-instagram text-2xl hover:text-slate-400 cursor-pointer transition-all"></i>
+                    <i class="fa-brands fa-youtube text-2xl hover:text-slate-400 cursor-pointer transition-all"></i>
+                    <i class="fa-brands fa-twitter text-2xl hover:text-slate-400 cursor-pointer transition-all"></i>
+                    <i class="fa-brands fa-github text-2xl hover:text-slate-400 cursor-pointer transition-all"></i>
+                </div>
+            </div>
+            <div
+                class="w-full flex justify-between items-center flex-row space-y-0 font-bold md:flex-col md:w-1/3 md:space-y-4 ">
+                <a href="#" class="uppercase text-white hover:text-slate-400 transition-all">portfolio</a>
+                <a href="#" class="uppercase text-white hover:text-slate-400 transition-all">about</a>
+                <a href="#" class="uppercase text-white hover:text-slate-400 transition-all">contact</a>
+                <a href="#" class="uppercase text-white hover:text-slate-400 transition-all">social</a>
+            </div>
+            <div class="w-full flex flex-col justify-between items-center md:flex-row  md:w-1/3">
+                <input type="text"
+                    class=" rounded-full flex-1 px-4 py-2 outline-none text-slate-700 mr-0 mb-5 md:mr-3 md-mb-0 "
+                    placeholder="Subsribe To Newsletter">
+                <a href="#"
+                    class=" capitalize py-2 px-6 rounded-full bg-orange-500 hover:bg-slate-700 transition-all text-white  tracking-wider">call
+                    me</a>
+            </div>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
